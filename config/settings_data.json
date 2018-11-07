@@ -1,6 +1,6 @@
 {
   "current": {
-    "type_base_family": "Google_Roboto_400_sans",
+    "type_base_family": "Google_Poppins_400_sans",
     "type_base_size": "13px",
     "type_header_family": "Google_Roboto_400_sans",
     "type_header_base_size": "26px",
@@ -358,7 +358,7 @@
             "settings": {
               "title": "Contact Us",
               "logo": "",
-              "address": "Sherman Oaks,<br>4300 Beverly Glen Blvd, 91423 CA",
+              "address": "",
               "phone": "",
               "email": "snowbrightsmile@gmail.com",
               "show_socials": true,
@@ -396,17 +396,6 @@
           "shipping_calculator_default_country": "India",
           "shipping_calculator_submit_button_label": "Calculate shipping",
           "shipping_calculator_submit_button_label_disabled": "Calculating..."
-        }
-      },
-      "1493711107168": {
-        "type": "featured-blog",
-        "settings": {
-          "title": "Latest From our Blog",
-          "blog": "news",
-          "post_limit": "2",
-          "blog_show_author": false,
-          "blog_show_date": true,
-          "show_view_all": false
         }
       },
       "product-template": {
@@ -545,7 +534,7 @@
           "tablet-grid": "3",
           "mobile-grid": "2",
           "rows": "24",
-          "collection_sidebar": true,
+          "collection_sidebar": false,
           "sidebar_position": "left"
         }
       },
@@ -782,7 +771,7 @@
             "type": "single_link",
             "settings": {
               "title": "BLOG",
-              "url": "",
+              "url": "shopify:\/\/pages\/news",
               "label": ""
             }
           },
@@ -790,7 +779,7 @@
             "type": "single_link",
             "settings": {
               "title": "FAQ",
-              "url": "",
+              "url": "shopify:\/\/pages\/faq-frequently-asked-questions",
               "label": ""
             }
           },
@@ -798,7 +787,7 @@
             "type": "single_link",
             "settings": {
               "title": "ABOUT",
-              "url": "",
+              "url": "shopify:\/\/pages\/about-us",
               "label": ""
             }
           },
@@ -806,7 +795,7 @@
             "type": "single_link",
             "settings": {
               "title": "CONTACT",
-              "url": "",
+              "url": "shopify:\/\/pages\/contact-us",
               "label": ""
             }
           }
@@ -918,37 +907,23 @@
           "cnt_txt": "#000000"
         }
       },
-      "1541468748518": {
-        "type": "slideshow",
-        "blocks": {
-          "1541468765419": {
-            "type": "video",
-            "settings": {
-              "video_id": "FEptZoKb2kk",
-              "video_type": "background-chrome",
-              "image": "",
-              "title": "Video slide",
-              "subheading": "Tell your brand's story through video and images"
-            }
-          }
-        },
-        "block_order": [
-          "1541468765419"
-        ],
+      "1541507077400": {
+        "type": "featured-blog",
+        "disabled": true,
         "settings": {
-          "show_slideshow": "desktop_mobile",
-          "autoplay": true,
-          "autoplay_speed": "5000",
-          "slideshow_height": "small",
-          "text_size": "medium"
+          "title": "LATEST FROM OUR BLOG",
+          "blog": "20-top-secrets-for-whiter-teeth",
+          "post_limit": "2",
+          "blog_show_author": false,
+          "blog_show_date": false,
+          "show_view_all": false
         }
       }
     },
     "content_for_index": [
       "1498058090711",
       "1498475541011",
-      "1493711107168",
-      "1541468748518"
+      "1541507077400"
     ]
   },
   "presets": {

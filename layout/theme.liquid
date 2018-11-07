@@ -42,7 +42,9 @@
   {% else %}
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {% endif %}
- 
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  {% comment %}{{ 'font-awesome/font-awesome.min.css' | asset_url | stylesheet_tag }}{% endcomment %}
   {{ 'custom.css' | asset_url | stylesheet_tag }}
   
   <script>
@@ -77,8 +79,9 @@
 
 	<div class="page-container" id="PageContainer">
     {% if template == 'index' %}
-      <video width="100%" autoplay muted loop>
+      <video width="100%" playsinline autoplay muted loop>
         <source src="{{ 'snow-white.mp4' | asset_url }}" type="video/mp4">
+        <source src="{{ 'snow-white.ogg' | asset_url }}" type="video/ogg">
         Your browser does not support HTML5 video.
       </video>
       <div class="flex-wrapper">
@@ -90,11 +93,36 @@
         <li><div class="cta"><img src="{{ 'leaf.gif' | asset_url }}"></div><p>Proprietary, Good-for-you ingredients</p></li>
       </ul>
     </div>
+    <div class="flex-two-col" id="all-in-one">
+      <ul>
+        <li>
+          <div>
+            <h3>All-in-One Snow Teeth Whitening System</h3>
+            <p>Prevent future stains while getting whiter teeth in only 10 minutes. Every order helps
+            provide dental care to a child in need.</p>
+            <p>No harmful chemicals &amp; never tested on animals.</p>
+            <div class=flex>
+             <a id="clickhere" href="https://snowbrightsmile.com/collections/frontpage/products/snow-teeth-whitening%E2%84%A2-at-home-system-all-in-one-kit"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <p>Get Started Now</p></a> </div>            
+          </div>
+        </li>
+        <li>
+          {{ 'snow-2.jpg' | asset_url | img_tag: 'Logo' }}
+        </li>
+      </ul>
+    </div>
     {% endif %}
 		<!-- site Content -->
 		<main class="main-content" id="MainContent" role="main">{{ content_for_layout }}</main>
   </div>
 
+  {% if template == 'index' %}
+    <video width="100%" playsinline autoplay muted loop>
+      <source src="{{ 'snow-promo.mp4' | asset_url }}" type="video/mp4">
+      <source src="{{ 'snow-promo.ogg' | asset_url }}" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+  {% endif %}  
 	<!-- site footer -->
     {% section 'footer' %}
 

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 .slideshow {
   height: 100% !important;
 }
@@ -52,16 +53,29 @@
   padding: 40px 40px;
   border-bottom: 1px solid #e7e7e7;
 }
+@media screen and (max-width: 766px) {
+  .flex-wrapper {
+    padding: 40px 0px;
+    display: flex;
+  }
+}
 
 .flex-wrapper ul {
   display: flex;
   justify-content: space-around;
   max-width: 100%;
 }
+@media screen and (max-width: 766px) {
+  .flex-wrapper ul {
+    flex-wrap: wrap;
+  }
+}
 
 .flex-wrapper ul li {
   padding-left: 15px;
   padding-right: 15px;
+  width: 180px;
+  margin: 25px 0px;
 }
 
 .flex-wrapper ul p {
@@ -83,6 +97,114 @@
   height: 80px;
   width: 80px;
   margin-bottom: 2px;
+}
+
+#all-in-one {
+  max-width: 100%;
+}
+#all-in-one li {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #666;
+  padding: 50px;
+}
+
+#all-in-one h3 {
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #255474;
+  font-size: 42px;
+}
+
+#all-in-one ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+#all-in-one ul li div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #666;
+  margin: 15px;
+}
+
+.flex {
+  flex-direction: row !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.fa-arrow-right:before {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 766px) {
+  .site-footer .footer-links ul {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+.fa-arrow-right {
+  position: relative;
+  transition: 2s;
+}
+
+a#clickhere:hover .fa-arrow-right:before {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  left: 5px;
+}
+
+.fa-arrow-right:hover {
+  position: relative;
+  left: 5px;
+}
+
+.fa-arrow-right:hover:before {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  left: 5px;
+}
+
+a#clickhere:hover {
+  border: 1px solid white;
+  transition: all 1s ease-in-out;
+  background-color: black !important;
+}
+
+a#clickhere {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: 1s !important;
+  border: 1px solid black;
+  width: 500px;
+}
+@media screen and (max-width: 766px) {
+  a#clickhere {
+    width: 100%;
+  }
+}
+
+a#clickhere:hover p {
+  color: white;
+}
+
+@media only screen and (max-width: 766px) {
+  .site-header .header-search {
+    margin: 10px auto;
+    width: 280px;
+    padding-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
